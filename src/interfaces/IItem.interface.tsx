@@ -7,6 +7,7 @@ export interface IItem {
   link?: string;
   image?: ImageProps['source'];
   backgroundColor?: string;
+  textColor?: string;
   activeLanguage?: string;
   slideMaxHeightPercent?: number;
 }

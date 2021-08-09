@@ -13,6 +13,7 @@ import { IItem } from '../interfaces/IItem.interface';
 const Item = ({
   index,
   backgroundColor,
+  textColor,
   title,
   text,
   link,
@@ -35,12 +36,12 @@ const Item = ({
           },
         ]}
       >
-        <Text style={styles.title}>
+        <Text style={{...styles.title, color: textColor ? textColor : 'white'}}>
           {Array.isArray(title) ? title[language] : title}
         </Text>
         {image && <Image style={styles.image} source={image} />}
         <View>
-          <Text style={styles.text}>
+          <Text style={{...styles.text, color: textColor ? textColor : 'white'}}>
             {Array.isArray(text) ? text[language] : text}
           </Text>
           {link && (

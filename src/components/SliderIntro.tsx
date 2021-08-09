@@ -270,6 +270,7 @@ const defaultProps: ISliderIntro = {
       text,
       image,
       backgroundColor,
+      textColor,
       activeLanguage,
       link,
       slideMaxHeightPercent,
@@ -282,6 +283,7 @@ const defaultProps: ISliderIntro = {
         text={text}
         image={image}
         backgroundColor={backgroundColor}
+        textColor={textColor}
         activeLanguage={activeLanguage}
         link={link}
         slideMaxHeightPercent={slideMaxHeightPercent}
